@@ -50,10 +50,9 @@ void Process_BLE_UART_Data(char BLE_UART_Buffer[])
     }
 }
 
-// Transmits UART test bytes for oscilloscope measurements.
-// This function checks the received data for commands that
-// turn the onboard RGB LED green or off.
-//
+//  This function is used for Task 6.1A to transmit
+//  hexadecimal values 0xAA, 0x55, 0xFF, and 0x00
+//  through P9.7 (UART TX).
 
 void UART_Transmit_Test(void)
 {

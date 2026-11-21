@@ -16,7 +16,7 @@ The Bluetooth Low Energy (BLE) lab interfaces with the following:
 
 What is Bluetooth Low Energy (BLE)? How does it differ from regular Bluetooth in terms of power consumption and range?
 
-Bluetooth Low Energy allows devices that require low power consumption while exchanging small amounts of data. It differs by becoming inactive between data transmissions. The range depends on factos such as transmission power, hardware, and environment.
+Bluetooth Low Energy allows devices that require low power consumption while exchanging small amounts of data. It differs by becoming inactive between data transmissions. The range depends on factors such as transmission power, hardware, and environment.
 
 ### Question 2: Generic Access Profile (GAP)
 
@@ -112,6 +112,10 @@ T_bit = 1 / 9600 = 104.17 us
 
 The measured bit lasted approximately 104 us, closely matching the expected value at 9600 baud with the given equation.
 
+#### Oscilloscope Results
+
+The oscilloscope screenshots show the START bit, data bits D0 to D7, STOP bit, and measured bit length for each transmitted hexadecimal value.
+
 ##### UART Transmission 0xAA
 ![UART 0xAA Waveform](Images/Lab4_6.1A_UART_0xAA.jpg)
 
@@ -123,11 +127,6 @@ The measured bit lasted approximately 104 us, closely matching the expected valu
 
 ##### UART Transmission 0x00
 ![UART 0x00 Waveform](Images/Lab4_6.1A_UART_0x00.jpg)
-
-#### Oscilloscope Results
-
-The oscilloscope screenshots show the START bit, data bits D0 to D7, STOP bit, and measured bit length for each transmitted hexadecimal value.
----
 
 ### Task 6.1B PMOD SWT UART Transmission
 
